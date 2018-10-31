@@ -1,0 +1,468 @@
+body {
+  font-family: arial, Helvetica, sans-serif;
+  font-family: serif;
+  margin: 0;
+  background: #181c22;
+  overflow-x: hidden;
+  font-size: 18px;
+}
+
+/* A simple reset. */
+*,
+::before,
+::after {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Heydon Pickering’s lobotomized owl. Details: https://bit.ly/1H7MXUD */
+* + * {
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+
+/* Set up fonts, colors and all that jazz. */
+body {
+  background: #181c22;
+  color: #686a69;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.75;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#main-nav {
+  background: #101010;
+  padding: 10px;
+  margin: 0;
+}
+#main-nav ul {
+  text-align: right;
+  list-style-type: none;
+}
+
+#main-nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#main-nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 6px;
+}
+
+#main-nav li.current {
+  background: #8f746c;
+  border-radius: 4px;
+}
+
+#main-nav li:hover {
+  background: #8f746c;
+}
+
+.services {
+  position: relative;
+}
+
+#main-banner {
+  background-image: url("../public/Code.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 10px 10px 15px 20px rgba(40, 40, 40, 0.6);
+  background-size: 100%;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+.banner-text {
+  text-align: center;
+  color: #fff;
+}
+
+.banner-text h2 {
+  font-size: 68px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 4px;
+  line-height: 1.3em;
+}
+
+.banner-text h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 4px;
+  margin-top: 40px;
+}
+
+.projects {
+  font-weight: lighter;
+  letter-spacing: 3px;
+  color: #fff;
+  margin: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.project-exp {
+  text-align: center;
+  font-weight: lighter;
+}
+
+.images {
+  max-height: 1500px;
+  max-width: 500px;
+}
+
+.team-images {
+  max-height: 1500px;
+  max-width: 350px;
+}
+#lower-body {
+  background: #0e1218;
+  margin: 0 15px 0 15px;
+  display: flex;
+}
+
+#lower-body .project {
+  background: #090d13;
+  margin: 15px;
+  flex-basis: 300px;
+  flex-grow: 1;
+  padding: 20px;
+  color: #999;
+  letter-spacing: 1.5px;
+  line-height: 1.5em;
+  border-radius: 8px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 1);
+  position: relative;
+  padding-bottom: 75px;
+}
+
+@media screen and (max-width: 1200px) {
+  #lower-body {
+    flex-wrap: wrap;
+  }
+
+  #lower-body div > img {
+    display: block;
+    float: left;
+    width: 46%;
+    margin: 2%;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .banner-text h2 {
+    font-size: 44px;
+    margin: 10px;
+  }
+
+  #upper-footer .social,
+  #upper-footer .contact {
+    float: left;
+    clear: left;
+    width: 100%;
+  }
+
+  #upper-footer .social-links {
+    float: left;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #header-links {
+    display: none;
+  }
+  .main-logo .logo {
+    top: 0;
+    position: relative;
+  }
+  .main-logo {
+    height: 50px;
+    background: #0e1218;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #upper-footer div > ul li {
+    width: 96%;
+  }
+
+  #homepage-bulletins .bulletin a {
+    width: 80%;
+    left: 10%;
+  }
+  #homepage-bulletins .bulletin {
+    padding: 20px 20px 100px;
+    margin: 20px 0 !important;
+  }
+
+  .banner-text h2 {
+    font-size: 34px;
+    margin: 10px;
+  }
+
+  .banner-text h3 {
+    font-size: 18px;
+    margin: 10px;
+  }
+}
+
+/* #lower-body .tasks:nth-child(2){
+      margin: 20px 100px;
+  } */
+
+.project:hover {
+  background: #77aaaa;
+  background: -moz-linear-gradient(bottom, #aaaddd 0%, #77aaaa 100%);
+  background: -webkit-linear-gradient(bottom, blue 0%, green 100%);
+  background: linear-gradient(bottom, red 0%, yellow 100%);
+}
+
+#lower-body h3 {
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+}
+
+#upper-footer {
+  /*display: block;*/
+  color: #999;
+  letter-spacing: 1px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 0px;
+  line-height: 1.5em;
+  font-weight: lighter;
+}
+
+#upper-footer h4 {
+  color: #fff;
+}
+
+#upper-footer .contact {
+  float: left;
+}
+
+#upper-footer .social {
+  float: right;
+  margin-top: -10px;
+}
+
+#upper-footer .contact-header {
+  margin-left: 12px;
+}
+
+#upper-footer .social-links {
+  margin-right: 5px;
+}
+
+#upper-footer li {
+  list-style-type: none;
+}
+
+#upper-footer a {
+  text-decoration: none;
+  color: #999;
+}
+
+#upper-footer h4 {
+  font-weight: lighter;
+}
+
+#footer {
+  background: #0e0e0e;
+  height: 60px;
+  margin-top: 0;
+}
+
+#footer p {
+  color: #fff;
+  text-transform: unset;
+  text-align: center;
+  padding: 5px 0;
+  font-weight: lighter;
+  font-size: 15px;
+  padding-top: 20px;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #999;
+}
+
+/*Contact Us */
+
+h1 {
+  color: #fff;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  line-height: 1.125;
+}
+
+/* Set up general layout rules for outer containers. */
+.content {
+  width: 90vw;
+  max-width: 550px;
+  margin: 8vh auto;
+}
+
+.content-heading {
+  font-size: 125%;
+}
+
+.content-lede {
+  margin-top: 8px;
+  margin-top: 0.5rem;
+  font-size: 87.5%;
+}
+
+.contactForm {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 16px 0 32px;
+  padding: 1rem 0 2rem;
+  border-top: 1px solid #cdcfcf;
+  border-bottom: 1px solid #cdcfcf;
+  overflow: hidden;
+}
+
+.contactForm-input-group {
+  margin-top: 4px;
+  margin-top: 0.25rem;
+  padding: 8px 16px;
+  padding: 0.5rem 1rem;
+}
+
+.contactForm-label {
+  display: block;
+  color: #fff;
+  font-family: Lato, sans-serif;
+  font-size: 108%;
+  line-height: 1.125;
+  font-weight: lighter;
+}
+
+.contactForm-input {
+  display: block;
+  margin-top: 0;
+  padding: 8px 12px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #cdcfcf;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  -webkit-transition: 150ms border-color linear;
+  transition: 150ms border-color linear;
+}
+
+.contactForm-input:focus,
+.contactForm-input:active {
+  border-color: #686a69;
+  outline: 0;
+}
+
+.contactForm-button {
+  display: block;
+  margin: 8px 16px 0;
+  margin: 0.5rem 1rem 0;
+  padding: 0 16px 2px;
+  padding: 0 1rem 0.125rem;
+  background-color: #686a69;
+  border: 0;
+  color: #f9fdfe;
+  font-family: lato, sans-serif;
+  font-size: 100%;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  -webkit-transition: 150ms all linear;
+  transition: 150ms all linear;
+}
+
+.contactForm-button:hover,
+.contactForm-button:active,
+.contactForm-button:focus {
+  background: #2a2f2c;
+  cursor: pointer;
+  outline: 0;
+}
+
+.formError {
+  display: none;
+  background-color: #c83737;
+  font-style: italic;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 0 0 15px 0;
+  text-align: center;
+  border-color: #d87070;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.formSuccess {
+  display: none;
+  background-color: #217844;
+  font-style: italic;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 0 0 15px 0;
+  text-align: center;
+  border-color: #35c06d;
+  border-width: 2px;
+  border-style: solid;
+}
+
+#team-div {
+  background: #0e1218;
+  margin: 0 15px 0 15px;
+  display: flex;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.name {
+  color: #fff;
+}
+
+#team-div .team {
+  background: #090d13;
+  margin: 15px;
+  flex-basis: 300px;
+  flex-grow: 1;
+  padding: 20px;
+  color: #999;
+  letter-spacing: 1.5px;
+  line-height: 1.5em;
+  border-radius: 8px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 1);
+  position: relative;
+  padding-bottom: 75px;
+}
+
+@media screen and (max-width: 1200px) {
+  #team-div {
+    flex-wrap: wrap;
+  }
+
+  #team-div div > a img {
+    display: block;
+    float: left;
+    width: 46%;
+    margin: 2%;
+    box-sizing: border-box;
+  }
+}
