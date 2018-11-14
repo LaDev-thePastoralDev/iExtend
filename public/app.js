@@ -34,6 +34,7 @@ app.client.request = (
   payload = typeof payload == "object" && payload !== null ? payload : {};
   callback = typeof callback == "function" ? callback : false;
 
+  console.log(payload);
   // For each query string parameter sent, add it to the path
   let counter = 0;
   let requestUrl = `${path}?`;
@@ -130,8 +131,8 @@ app.bindForms = function() {
               classOfElement.indexOf("multiselect") === -1
                 ? elements[i].checked
                 : classOfElement.indexOf("intval") === -1
-                  ? elements[i].value
-                  : parseInt(elements[i].value);
+                ? elements[i].value
+                : parseInt(elements[i].value);
 
             let elementIsChecked = elements[i].checked;
             // Override the method of the form if the input's name is _method
@@ -237,10 +238,85 @@ app.formResponseProcessor = function(formId, requestPayload, responsePayload) {
   }
 };
 
+// Mawingu slider
+app.sliders = () => {
+  let sliderImages = document.querySelectorAll(".slide");
+  console.log(sliderImages);
+
+  var currentImage = 0;
+
+  let backGroundImage = document.getElementById("slider");
+
+  //clear slider images
+  function reset() {
+    for (let i = 0; i < sliderImages.length; i++) {
+      sliderImages[i].style.display = "none";
+    }
+  }
+
+  //initialize slider
+  function startSlide() {
+    reset();
+    if (currentImage >= sliderImages.length) {
+      currentImage = 0;
+    }
+
+    sliderImages[currentImage].style.display = "block";
+    currentImage++;
+  }
+
+  startSlide();
+
+  let myTimer = setInterval(startSlide, 4000);
+
+  backGroundImage.onclick = function() {
+    clearInterval(myTimer);
+  };
+};
+
+// infomoby slider
+app.infomoby = () => {
+  let infomobySlide = document.querySelectorAll(".slide1");
+  console.log(infomobySlide);
+
+  var currentSlide = 0;
+
+  let backGroundImage = document.getElementById("infomoby");
+
+  //clear slider images
+  function reset() {
+    for (let i = 0; i < infomobySlide.length; i++) {
+      infomobySlide[i].style.display = "none";
+    }
+  }
+
+  //initialize slider
+  function startSlide() {
+    reset();
+    if (currentSlide >= infomobySlide.length) {
+      currentSlide = 0;
+    }
+
+    infomobySlide[currentSlide].style.display = "block";
+    currentSlide++;
+  }
+
+  startSlide();
+
+  let myTimer = setInterval(startSlide, 4000);
+
+  backGroundImage.onclick = function() {
+    clearInterval(myTimer);
+  };
+};
+
 // Init (bootstrapping)
 app.init = function() {
   // Bind all form submissions
   app.bindForms();
+  // sliders
+  app.sliders();
+  app.infomoby();
 };
 
 // Call the init processes after the window loads

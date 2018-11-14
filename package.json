@@ -1,26 +1,28 @@
 {
-  "name": "nodejs",
+  "name": "iextend",
   "version": "1.0.0",
-  "description": "",
+  "description": "iExtend Portfolio",
   "main": "index.js",
   "directories": {
-    "lib": "lib",
-    "test": "test"
+    "lib": "lib"
   },
+  "dependencies": {
+    "mongodb": "^3.1.8",
+    "nodemailer": "^4.6.8",
+    "nodemailer-smtp-transport": "^2.7.4"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LaDev-thePastoralDev/learningNode.git"
+    "url": "git+https://github.com/LaDev-thePastoralDev/iExtend.git"
   },
-  "author": "",
+  "author": "LaDev-thePastoralDev",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LaDev-thePastoralDev/learningNode/issues"
+    "url": "https://github.com/LaDev-thePastoralDev/iExtend/issues"
   },
-  "homepage": "https://github.com/LaDev-thePastoralDev/learningNode#readme",
-  "dependencies": {
-    "mongodb": "^3.1.8"
-  }
+  "homepage": "https://github.com/LaDev-thePastoralDev/iExtend#readme"
 }

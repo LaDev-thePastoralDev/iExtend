@@ -25,8 +25,10 @@ database.create = (data, callback) => {
     },
     (err, result) => {
       if (!err && result) {
+        console.log("No error: ", result);
         callback(JSON.stringify(result.ops, undefined, 2));
       } else {
+        console.log("Error: ", err);
         callback(JSON.stringify(err, undefined, 2));
       }
     }
@@ -34,14 +36,14 @@ database.create = (data, callback) => {
 };
 
 database.read = (email, callback) => {
-  db.collection("feedback").find(
+  db.collection("feedback").findOne(
     {
       email: email
     },
     (err, data) => {
       if (!err && data) {
         const parsedData = JSON.stringify(data);
-        callback(false, parsedData);
+        callback(false, data);
       } else {
         callback(err, data);
       }

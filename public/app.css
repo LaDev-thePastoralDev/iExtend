@@ -466,3 +466,129 @@ h1 {
     box-sizing: border-box;
   }
 }
+
+#slider .first {
+  background-image: url("./1Welcome.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+
+#slider .second {
+  background-image: url("./2AccessAC.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+
+#slider .third {
+  background-image: url("./3aCustomerDetails.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+
+#slider .fourth {
+  background-image: url("./3bCustomerNotFound.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+
+#slider .fifth {
+  background-image: url("./4aTicketDetails.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+
+#slider .sixth {
+  background-image: url("./4bTicketDetails.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+
+#slider .seventh {
+  background-image: url("./5CommandoDetails.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+
+#slider .eighth {
+  background-image: url("./6Summary.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+
+#slider .ninth {
+  background-image: url("./7Response.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+
+#slider .tenth {
+  background-image: url("./8TicketDetailsView.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+
+#slider .eleventh {
+  background-image: url("./9Casecreated.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+
+#slider .twelvth {
+  background-image: url("./10Caseupdated.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+
+#infomoby .first {
+  background-image: url("./FindbusinessAC.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+
+#infomoby .second {
+  background-image: url("./Findbusinessform.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+
+#infomoby .third {
+  background-image: url("./Locationsearch.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+
+#infomoby .fourth {
+  background-image: url("./Searchresponse.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+
+#infomoby .fifth {
+  background-image: url("./Searchresults.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+
+#infomoby .sixth {
+  background-image: url("./Searchresultssummary.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
